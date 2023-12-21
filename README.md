@@ -28,3 +28,16 @@ Deployment link: [click here to explore]()
 Figma : [figma link]()
 
 Demo video link: [Figma Video link]()
+
+# Some Related Pictures
+
+![Screenshot (169)](https://github.com/iisshh17/IshPreps/assets/144683616/e3bc3839-2fce-40fb-a433-a6537ad75fe2)
+![Screenshot (170)](https://github.com/iisshh17/IshPreps/assets/144683616/9cf4f222-5117-4de6-acd6-95ef43088b94)
+![Screenshot (171)](https://github.com/iisshh17/IshPreps/assets/144683616/5fa8e40f-4298-42d4-b36e-e57036ff591d)
+![Screenshot (172)](https://github.com/iisshh17/IshPreps/assets/144683616/f3182280-1f82-4847-a545-c25e8f525449)
+![Screenshot (175)](https://github.com/iisshh17/IshPreps/assets/144683616/2f0c8f52-408e-483a-8861-954d14e6579c)
+![Screenshot (173)](https://github.com/iisshh17/IshPreps/assets/144683616/a9b9d79d-335c-4d2f-b3ea-1bc9e0b2c310)
+
+
+
+
