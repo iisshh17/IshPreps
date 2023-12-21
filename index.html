@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="./Resources/Image.png" type="image/svg+xml" />
+
+    <title>IshPreps</title>
+    <link rel="stylesheet" href="./style.css" class="css">
+</head>
+<body>
+
+
+<div class="bg">
+<!-- creating navbar -->
+    <nav>
+        <img id="white-logo" src="Resources/white logo.png" alt="" height="60vh" width="60vw">
+        <ul>
+            <li id="home">Home <a href="./index.html"></a></li>
+            <li id="chefs">Chefs</li>
+            <li id="recipes">Recipes</li>
+        </ul>
+    </nav>
+<section class="top">
+
+<!-- A quick intro about the website -->
+<div class="left">
+    <div id="intro">
+        <h1>Welcome To Ishpreps !</h1>
+        <p>
+            Explore culinary wonders at Ishpreps! 
+            From savory to sweet, discover delightful recipes 
+            with step-by-step instructions. Embrace randomness
+            for surprising meal ideas. Your go-to for spontaneous
+            culinary delights.</p>
+    </div>
+
+
+    <!-- making buttons -->
+    <div class="flex">
+
+        <div id="explore"><b>Explore new meal</b>
+            <button onclick="scrollByAmount(660)"><img id="exploreIcon" src="Resources/shuffle-arrows.png" alt=""></button>
+         </div>
+
+        <div id="search"><b>Search</b>
+            <button onclick="scrollByAmount(1460)"><img id="searchMove" src="Resources/Search.png" alt=""></button>
+        </div>
+    
+    </div>
+
+
+</div>
+
+<!-- adding gif -->
+
+<div class="right">
+    <div id="gif">
+        <img src="Resources/Gif.gif" alt="" height="300vh" >
+    </div>
+</div>
+
+
+</div>
+</section>
+
+
+<!-- Creating structure for random food -->
+<div class="random">
+        
+       <h2><b><center>TODAY'S SPECIAL</center></b></h2>
+       
+        <div class="white">
+            <img id="dish" alt="">
+            <h4 id="dishname"></h4>
+        </div>
+
+        <div id="RandomDish">
+            <button id="details">Details</button>
+        </div>
+
+<!--Creating divs for display of ingredients and recipe  -->
+        <div class="modal" id="modal">
+            <div id = "ingredients"><span class="headText"><u>Ingredients</u></span></div>
+            <div id="recipe"><span class="headText"><u>Recipe</u></span><br></div>
+        </div>
+
+       
+
+
+</div>
+
+<!-- Creating divs to show food searched -->
+<div class="main">
+
+    <div class="searchgrid">
+
+        <h5 id="text">LOOKING FOR SOMETHING? <br> Type-in your favorite meal</h5>
+
+        <div id="searchbar">
+            <input type="text" id="searchBox" placeholder="What are you craving for?">
+            <img id="searchIcon" src="Resources/search.png" alt="">
+        
+        </div>
+
+    </div>
+
+    <div class="error"></div>
+
+    <div class="grid"></div>
+
+</div>
+    
+<!-- creating footer -->
+<footer>
+    <div class="footer">
+        
+        <div id="footerLogo">
+            <img id="bottomLogo" src="Resources/white logo.png" alt=""> 
+            <span id="Name">ISHPREPS</span>
+        </div>
+        <h5>Where Culinary Inspiration Meets Random Delights!</h5>
+        <h6>Designed and Developed by <u id="githubLink">Ishika</u> </h6>
+
+        <div id="Contact">Contact us :<br> 9876458716, 8765456789</div>
+        
+    </div>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>

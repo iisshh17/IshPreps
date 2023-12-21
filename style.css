@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kalam&family=Kdam+Thmor+Pro&family=Nunito&family=Nunito+Sans:opsz,wght@6..12,700&family=Pixelify+Sans&family=Poppins&family=Sacramento&family=Sofia+Sans+Semi+Condensed&family=Ubuntu&family=Whisper&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almendra&family=Architects+Daughter&family=Bad+Script&family=Kalam&family=Kdam+Thmor+Pro&family=Nunito&family=Nunito+Sans:opsz,wght@6..12,700&family=Pixelify+Sans&family=Poppins&family=Sacramento&family=Sofia+Sans+Semi+Condensed&family=Ubuntu&family=Whisper&display=swap');
+ 
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* styling 1st window */
+.bg{
+    width: 98.9vw;
+    height: 100vh;
+    background:  url('./Resources/Bg.jpg')rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+}
+
+#white-logo{
+    padding: 0.3vw 0 0 2vw;
+}
+
+/* styling navbar */
+nav{
+    height: 10vh;
+    width: 98.9vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    
+}
+
+ul{
+    padding-left: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: row;
+    gap: 100px;
+    list-style: none;
+    font-size: 20px;  
+}
+
+ul li:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    height: 6vh;
+}
+
+u{
+   color: white;
+}
+
+h1{
+    color: white;
+    font-size: 75px;
+    text-align: left;
+    padding-left: 3vw;
+    padding-top: 10vh;
+    font-weight: 900;
+}
+
+p{
+    color: white;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 3vw;
+    
+}
+
+/* styling buttons */
+#explore, #search{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    margin: 20px;
+    padding: 3px;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif; 
+    width: 10vw;
+}
+
+#explore{
+    width: 15vw;
+}
+
+#exploreIcon, #searchMove{
+    height: 3vh;
+}
+
+#search b, #explore b{
+    margin: 0.5vw;
+}
+
+.flex{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 2vw;
+}
+
+#explore:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+}
+
+button{
+    background-color: rgba(255, 0, 0, 0);
+    border: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+
+#search:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+}
+
+#gif img{
+    width: 30vw;
+    height: 30vw;
+}
+
+/* styling div for Random */
+.random{
+    width: 98.9vw;
+    height: 120vh;
+    background: linear-gradient(to bottom, black,gray,black);
+}
+
+h2{
+    padding-top: 5vh;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.white{
+    box-shadow: 8px 8px 8px rgb(162, 162, 162);
+    width: 25vw;
+    margin: auto;
+    background-color: white;
+    margin-top: 1.5vh;
+}
+
+h3{
+    display:flex;
+    align-self: center;
+    justify-content: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+#details{
+    margin-top: 8vh;
+    height: 6vh;
+    width: 10vw;
+    background-color: white;
+    box-shadow: 4px 4px 4px gray;
+    font-size: 25px;
+}
+
+#RandomDish{
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+
+#RandomDish button:hover{
+    cursor: pointer;
+    background-color:gray;
+    color: white;
+    box-shadow: 3px 3px 3px white;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.top div{
+    width: 40vw;
+}
+
+#dish{
+    width: 100%;
+
+}
+
+h4{
+    font-size: 30px;
+    text-align: center;
+}
+
+/* styling modal */
+.modal{
+    display: none;
+    width: 50vw;
+    height: 60vh;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 110vh;
+    right: 10vw;
+    justify-content: center;
+    margin-top: 20px;
+}
+.headText{
+    text-align: center;
+    font-weight: 900;
+}
+#ingredients{
+    margin: 2vw;
+    width: 30vw;
+    height: 45vh;
+    background-color: rgb(65, 64, 64);
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px grey;
+    overflow: auto;
+    padding: 1vw;
+    color: white;
+}
+
+#recipe{
+    padding: 1vw;
+    margin: 2vw;
+    width: 30vw;
+    height:45vh;
+    background-color: rgb(65, 64, 64);
+    border-radius: 20px;
+    color: white;
+    overflow: auto;
+    box-shadow: 4px 4px 4px grey
+}
+
+/* styling the search window */
+.main{
+    width: 98.9vw;
+    background:linear-gradient(gray,black,gray,black);
+}
+
+.searchgrid{
+    display: flex;
+}
+
+#text{
+    font-size: 40px;
+    padding-top: 10vh;
+    color: white;
+}
+
+#searchbar input{
+    width: 40vw;
+    height: 8vh;
+    background-color: rgba(255, 255, 255, 0.708);
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 5vw;
+    margin-top: 40vh;
+    margin-bottom: 10vh;
+    font-size: 25px;
+}
+
+.error{
+    display: none;
+    color: rgb(163, 41, 41);
+    font-size: 40px;
+    margin-left: 20vw;
+    padding-bottom: 5vh;
+}
+
+#searchIcon{
+    height: 5vh;
+    margin-top: 2vh;
+    position: absolute;
+    right: 18vw;
+    top: 260vh;
+}
+
+#searchIcon:hover{
+    cursor: pointer;
+}
+
+.grid{
+    display:none;
+    width: fit-content;
+    margin: auto;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.menu{
+    height: 40vh;
+    width: 18vw;
+    border: 3px solid black;
+    box-shadow: 5px 5px 5px gray;
+    padding: 15px;
+    background-color: beige;
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
+    transition: box-shadow 0.3s ease-in-out, border 0.3s ease-in-out, padding 0.3s ease-in-out; 
+}
+
+.menu:hover{
+    cursor: pointer;
+    transform: rotate(5deg);
+    box-shadow: 10px 10px 10px gray;
+}
+
+/* styling the footer */
+.footer{
+    width: 98.9vw;
+    background-color: rgb(30, 29, 29);
+    overflow: hidden;
+    
+}
+
+#bottomLogo{
+    margin-top: 1vh;
+    padding-left: 4vw;
+    height: 12vh;
+}
+
+h5{
+    margin-left: 4vw;
+    font-size: 16px;
+    color: white;
+}
+
+#footerLogo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#Name{
+    color: beige;
+   font-weight: 800;
+   font-size: 40px;
+   text-shadow: 2px 2px 2px rgb(170, 170, 170);
+}
+
+.FooterFlex{
+    display: flex;
+}
+
+#Contact{
+    color: white;
+    position: relative;
+    left: 60vw;
+    bottom: 20vh;
+    line-height: 6vh;
+}
+
+h6{
+    font-size: 19px;
+    color: white;
+    padding-top: 5vh;
+    padding-left: 4vw;
+}
+
+u{
+    font-size: 25px;
+    color: bisque;
+}
+
+u:hover{
+    cursor: pointer;
+}
+
+.item{
+    width: 100%;
+    height: 86%;
+}
+
+.img-name{
+    color: black;
+}
+
+
+/* applying media query to make it responsive for multiple desktop and mobile screens  */
+
+@media(max-width: 450px) {
+
+    ul{
+        flex-direction: row;
+        display: flex;
+        padding-left: 0;
+        gap: 10px;
+        font-size: 15px;
+    }
+
+    li{
+        display: flex;
+    }
+    
+    #gif img{
+        margin-top: 0;
+        height: 40vh;
+        width:40vw;
+        
+    }
+    body {
+        font-size: 10px; 
+    }
+
+    h1 {
+        font-size: 22px; 
+        padding-top: 5vh;
+        text-align: center;
+    }
+
+    p {
+        font-size: 10px; 
+        text-align: center;
+    }
+
+    .white{
+        width: 70vw;
+    }
+
+    h4{
+        font-size: 18px;
+    }
+    .random{
+        height: auto;
+    }
+
+    #details{
+        width: 40vw;
+        font-size: 20px;
+        margin-top: 4vh;
+        margin-bottom: 2vh;
+        height: 8vh;
+    }
+    
+    #explore, #search {
+        font-size:8px;
+        width: 100%; 
+        margin-top: 15vh;
+    }
+
+    .modal{
+        position: absolute;
+        top: 100vh;
+        height: 40vh;
+        width: 80%;
+        background-color:blanchedalmond;
+        padding: 1vh;
+    }
+
+    #ingredients, #recipe{
+        border-radius: 10px;
+        padding: 3vh;
+        height: auto;
+    }
+
+    .searchgrid{
+        display: block;
+    }
+
+    #text{
+        font-size: 19px;
+    }
+
+    #searchbar input{
+        width: 80%;
+        margin-top: 10vh;
+        font-size: 15px;
+        margin-left:9vw;
+    }
+
+    #searchIcon{
+        top: 184vh;
+        right: 13vw;
+    }
+
+    .error{
+        font-size: 25px;
+    }
+    .menu{
+        width: 60%;
+        
+    }
+    
+    .grid {
+        grid-template-columns: repeat(1, 1fr); 
+        grid-row-gap: 30px;
+        margin-left: 20%;
+    }
+
+    #Name{
+        margin-top: 5vh;
+        font-size:30px;
+    }
+
+    #bottomLogo{
+        height:15vh;
+    }
+
+    h5{
+        font-size:10px;
+    }
+
+    h6{
+        font-size: 13px;
+    }
+
+    u{
+        font-size:20px;
+    }
+
+    #Contact{
+        bottom: 2vh;
+        right: 5vw;
+        line-height:4vh;
+        padding-top: 5vh;
+    }
+}
+
+
+@media (max-width:430px){
+    #searchIcon{
+        top: 194vh;
+    }
+}
+
+
+@media (max-width:380px){
+    #searchIcon{
+        top: 190vh;
+    }
+}
+
+
+@media (max-width:320px){
+    #searchIcon{
+        top: 185vh;
+    }
+}
+
+
+@media (max-width:1025px){
+    #searchIcon{
+        top: 260vh;
+        right:5vw;
+    }
+}
