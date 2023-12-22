@@ -58,14 +58,14 @@ function randomDish() {
         .then(response => response.json())
         .then(data => {
             // console.log(data)
-            ingredientList.innerHTML ="<b>Ingredients</b>"
-            instructions.innerHTML="<b>Recipe</b> <br>"
+            ingredientList.innerHTML = "<b>Ingredients</b>"
+            instructions.innerHTML = "<b>Recipe</b> <br>"
             dish.setAttribute('src', data.meals[0]['strMealThumb'])
-            document.querySelector('h2').innerHTML= "Today's Special"
+            document.querySelector('h2').innerHTML = "Today's Special"
             dishName.innerText = data.meals[0]['strMeal']
 
             for (let i = 1; i <= 20; i++) {
-                if (data.meals[0][`strIngredient${i}`] == "" && data.meals[0][`strIngredient${i}`] == null  ) {
+                if (data.meals[0][`strIngredient${i}`] == "" || data.meals[0][`strIngredient${i}`] == null) {
                     break;
                 }
                 else {
@@ -90,49 +90,49 @@ exploreButton.onclick = () => {
 
 // To fetch API and get Grid as per user's searched dish
 
-function search (searchterm){
+function search(searchterm) {
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${searchterm}`)
-    .then(response=>response.json())
-    .then(data =>{
-        // console.log(data)
-        gridPage.innerHTML =""
-        if(data.meals){
-            data.meals.forEach((dish)=>{
-                gridPage.innerHTML+=
-            `
+        .then(response => response.json())
+        .then(data => {
+            // console.log(data)
+            gridPage.innerHTML = ""
+            if (data.meals) {
+                data.meals.forEach((dish) => {
+                    gridPage.innerHTML +=
+                        `
             <div class="menu" onclick=popid(${dish.idMeal})>
                 <img src=${dish.strMealThumb} class="item">
                 <p class="img-name">${dish.strMeal}</p>
             </div>
             `
-            })
-            gridPage.style.display = 'grid'
-        }
-        else{
-            noResult.style.display = "block";
-            // console.log("error");
-            noResult.innerHTML = 'No Result Found!!!';
+                })
+                gridPage.style.display = 'grid'
+            }
+            else {
+                noResult.style.display = "block";
+                // console.log("error");
+                noResult.innerHTML = 'No Result Found!!!';
 
-        }
-    })
+            }
+        })
 }
 
 
 // Fetch API to show ingredients and recipes as per user's searched dish
 
-function popid(id){
+function popid(id) {
     fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
-    .then(response=> response.json())
-    .then(data =>{
-        // console.log(data)
-        dish.setAttribute('src', data.meals[0]['strMealThumb'])
+        .then(response => response.json())
+        .then(data => {
+            // console.log(data)
+            dish.setAttribute('src', data.meals[0]['strMealThumb'])
             dishName.innerText = data.meals[0]['strMeal']
             window.location.href = `#dish`
-            instructions.innerHTML="Recipe"
-            document.querySelector('h2').innerHTML= "Your Desired Dish"
-            ingredientList.innerHTML ="Ingredients"
+            instructions.innerHTML = "Recipe"
+            document.querySelector('h2').innerHTML = "Your Desired Dish"
+            ingredientList.innerHTML = "Ingredients"
             for (let i = 1; i <= 20; i++) {
-                if (data.meals[0][`strIngredient${i}`] == "") {
+                if (data.meals[0][`strIngredient${i}`] == "" || data.meals[0][`strIngredient${i}`] == null) {
                     break;
                 }
                 else {
@@ -145,13 +145,13 @@ function popid(id){
 
             instructions.innerHTML = data.meals[0]['strInstructions']
             scrollByAmount(-200)
-    })
+        })
 }
 
 
-searchButton.onclick=()=>{
+searchButton.onclick = () => {
     let searchterm = searchbar.value
     // console.log(searchterm)
     search(searchterm)
-    
+
 }
