@@ -23,11 +23,11 @@ freepik.com
 
 
 
-Deployment link: [click here to explore]()
+Deployment link: [click here to explore](https://iisshh17.github.io/IshPreps/)
 
-Figma : [figma link]()
+Figma : [figma link](https://www.figma.com/file/oOBnHQNgwC8ti2DxPLO7HT/Untitled?type=design&node-id=81%3A35&mode=design&t=1kznXp4Tf67G0NAx-1)
 
-Demo video link: [Figma Video link]()
+Demo video link: [Figma Video link](https://drive.google.com/file/d/1lQm8lVaozbJpsmFMdyW00V6bbxsIzGzx/view?usp=sharing)
 
 # Some Related Pictures
 
