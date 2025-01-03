@@ -14,7 +14,8 @@ let pop = document.getElementById('modal');
 let button = document.getElementById('recipe');
 var home = document.getElementById("home");
 var chefs = document.getElementById("chefs");
-var Github = document.getElementById("githubLink")
+var Github = document.getElementById("githubLink");
+var recipes = document.getElementById("recipes");
 
 
 // onclick functions
@@ -24,6 +25,10 @@ home.addEventListener('click', function () {
 
 chefs.addEventListener('click', function () {
     window.location.href = "https://trulyexperiences.com/blog/most-decorated-michelin-star-chefs/"
+})
+
+recipes.addEventListener('click',function(){
+    window.location.href = "https://www.allrecipes.com/"
 })
 
 let turn = 0;
